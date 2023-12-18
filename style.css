@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapics.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
     width: 100%;
@@ -146,11 +147,13 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    margin-bottom: 64px;
+
 }
 
 .whoWriteup {
     display: flex;
-    padding: 10px;
+    padding: 40px 0;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -325,18 +328,24 @@ body {
     display: flex;
     padding: 0px 120px;
     align-items: center;
-    gap: 76px;
+    justify-content: space-between;
     background-color: #FFF5D4;
-    margin-top: 64px;
    @media screen and (max-width: 425px) {
     flex-direction: column;
-    gap: 5px;
-    padding: 20px;
+    padding: 0px 0px;
    }
 }
 
+.farmersWriteup {
+    width: 40%;
+    @media screen and (max-width: 425px) {
+        width: 100%;
+        padding: 30px ;
+    }
+}
+
 .farmersWriteup h2 {
-    width: 534px;
+    width: 100%;
     color: #000;
     font-family: Poppins;
     font-size: 2.5em;
@@ -348,41 +357,11 @@ body {
     }
 }
 
-.farmersWriteup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 32px;
-    /* width: 50%; */
-    @media screen and (max-width: 425px) {
-        /* background-color: #15984D; */
-    }
-}
 
-.grandChildFarmerWriteup {
+.grandChildFarmerWriteup  {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.grandChildFarmerWriteup .gcfw {
-    width: 534px;
-    color: #000;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    @media screen and (max-width: 426px) {
-    }
-}
-
-.greatGrandchildFarmerWriteup {
-    display: flex;
-    align-items: flex-start;
-    gap: 84px;
+    padding: 20px 0px;
+    justify-content: space-between;
     color: #000;
 }
 
@@ -441,16 +420,19 @@ body {
     border: 1px solid #15984D;
 }
 
-.farmerImage {
+.farmerImage-wrap {
     width: 50%;
     height: 540px;
     background-repeat: no-repeat;
     background-size: cover;
     @media screen and (max-width: 425px) {
-        width: 100%;
+        width: 95%;
     }
 }
 
+.farmerImg {
+    width: 100%;
+}
 
 .discover {
     display: flex;
@@ -530,17 +512,21 @@ body {
     margin-top: 64px;
     @media screen and (max-width:425px) {
         flex-direction: column;
+        padding: 0px 0px;
+        gap: 0px;
+
     }
 }
 
-.delivery .deliveryImage {
-    width: 590px;
-    height: 540px;
-    background-repeat: no-repeat;
-    background-size: cover;
+.deliveryImageWrap {
+    width: 100%;
+    height: auto;
 }
 
-.delivery .deliveryWriteup {
+.deliveryImg {
+    width: 100%;
+}
+.deliveryWriteup {
     display: flex;
     padding: 20px 0px;
     flex-direction: column;
@@ -548,6 +534,10 @@ body {
     align-items: flex-start;
     gap: 24px;
     color: #000000;
+    @media screen and (max-width:425px) {
+        width: 100%;
+        padding: 30px;
+    }
 }
 
 .deliveryWriteup h2 {
@@ -558,68 +548,14 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    @media screen and (max-width: 425px) {
+        font-size: 1.5rem;
+    }
 }
 
-.deliveryWriteup .parentDeliveryWriteup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24px;
-}
 
-.delivery .childDeliveryWriteup {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.childDeliveryWriteup .flexible {
-    width: 534px;
-    color: #000;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-}
-
-.childDeliveryWriteup .grandchildDeliveryWriteup {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.grandchildDeliveryWriteup .exclusive {
-    width: 253px;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-}
-
-.grandchildDeliveryWriteup .enroll {
-    width: 534px;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-}
-
-.grandchildDeliveryWriteup .special {
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-}
-
-.grandchildDeliveryWriteup .need {
-    width: 534px;
+.delivery-text {
+    width: 90%;
     color: #000;
     font-family: Poppins;
     font-size: 16px;
@@ -799,39 +735,41 @@ align-items: center;
 gap: 0.5rem;
 flex-shrink: 0;
 border-radius: 0.375rem;
-/* background: #15984D; */
+border-style: none;
+background-color: #15984D;
+color: #FFF;
 }
-
 
 .image{
     width: 43.25rem;
 height: 32.875rem;
 flex-shrink: 0;
 background: url('./images/greenerVeg.png'), lightgray 50% / cover no-repeat;
-
-
 }
-
 
 .question-section{
     display: flex;
     width: 100%;
-    align-items: flex-start;
-    gap: 4.6875rem;
-
+    justify-content: space-between;
     padding: 0 120px;
-
-/* background-color: blue; */
+@media screen and (max-width: 425px) {
+    flex-direction: column;
+    padding: 0;
+}
 }
 
 
 .left-section{
     display: flex;
-width: 40%;
+width: 45%;
 flex-direction: column;
 align-items: flex-start;
 gap: 1rem;
 flex-shrink: 0;
+@media screen and (max-width: 425px) {
+    width: 100%;
+    padding: 0 20px;
+}
 }
 
 
@@ -841,12 +779,11 @@ flex-shrink: 0;
 
 
 font-family: Poppins;
-font-size: 2rem;
+font-size: 32px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
-
 
 .left-section p{
     width: 30.25rem;
@@ -856,23 +793,27 @@ font-size: 1.25rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+margin-bottom: 16px ;
 }
-
 
 .right-section{
     display: flex;
 width: 60%;
 flex-direction: column;
-align-items: flex-start;
-gap: 2.5rem;
-flex-shrink: 0;
 
-
+@media screen and (max-width: 425px) {
+    margin-top: 64px;
+    width: 100%;
+    padding: 0 20px;
+}
 }
 
-
+.right-section p {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
 hr{
-    width: 39.125rem;
 height: 0.0625rem;
 background: #000;
 color: #000000;
@@ -894,10 +835,11 @@ border-style: none;
 
 
 .community-section{
-    width: 75rem;
-    height: 20rem;
+    width: 86%;
+    height: auto;
     display: flex;
-padding: 3.1875rem 27.3125rem 3.1875rem 5rem;
+margin: 0 120px;
+padding: 51px 80px;
 align-items: center;
 background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), 
 url('./images/greenerVeg.png'), lightgray 50% / cover no-repeat;
@@ -907,9 +849,9 @@ margin-bottom: 64px;
 
 .empower{
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 
@@ -928,7 +870,6 @@ line-height: normal;
 
 
 .empower p{
-    width: 41.5625rem;
     height: 2.75rem;
     color: #FFF;
 font-family: Poppins;
