@@ -123,8 +123,8 @@ body {
     width: 17.8rem;
     padding: 1.3rem;
     text-align: center;
-    border: none;
-    outline: none;
+    border-style: none;
+    outline: none;    
     background-color: #15984D;
     color: white;
     border-radius: 6px;
@@ -136,6 +136,10 @@ body {
     }
 }
 
+.start-btn a {
+    text-decoration: none;
+    color: #FFF;
+}
 /* SECTION 1 */
 .whoWeAre {
     display: flex;
@@ -352,8 +356,7 @@ body {
     gap: 32px;
     /* width: 50%; */
     @media screen and (max-width: 425px) {
-        /* width: 100%; */
-        background-color: #15984D;
+        /* background-color: #15984D; */
     }
 }
 
@@ -373,7 +376,6 @@ body {
     font-weight: 400;
     line-height: 22px;
     @media screen and (max-width: 426px) {
-        /* width: 100%; */
     }
 }
 
@@ -434,6 +436,8 @@ body {
     gap: 8px;
     border-radius: 6px;
     border-style: none;
+    text-decoration: none;
+    color: #15984D;
     border: 1px solid #15984D;
 }
 
@@ -659,13 +663,11 @@ body {
     gap: 1rem;
     @media screen and (max-width: 425px) {
         width: 100%;
-        /* background-color: #15984D; */
     }
 }
 
 
 .discover-div h1{
-    /* width: 38.37rem; */
     width: 70%;
     height: 6rem;
     font-family: Inter;
@@ -675,7 +677,6 @@ body {
     line-height: normal;
     @media screen and (max-width: 425px) {
         width: 100%;
-        /* background-color: yellow; */
         font-size: 1.5rem;
     }
 }
@@ -732,7 +733,10 @@ gap: 2.25rem;
     animation: duration timing-function delay iteration-count direction fill-mode;
 }
 
-
+.second-btn a  {
+    text-decoration: none;
+    color: #FFF;
+}
 .empower-section{
     display: flex;
     width: 100%;
@@ -795,7 +799,7 @@ align-items: center;
 gap: 0.5rem;
 flex-shrink: 0;
 border-radius: 0.375rem;
-background: #15984D;
+/* background: #15984D; */
 }
 
 
